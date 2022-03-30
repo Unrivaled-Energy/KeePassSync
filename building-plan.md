@@ -1,4 +1,4 @@
-#Steps to build
+# Design Steps
 
 ## Setting up Minio
 
