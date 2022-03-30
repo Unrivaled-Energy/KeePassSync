@@ -7,8 +7,9 @@ configure minio to create events for s3:ObjectCreated:Put
 ## Linux development
 
 watch changes on local db
-[ ] if local file changes, stop watching ,reupload to minio, resume watching
-[ ] if remote file changes, stop watching,download db, resume watching
+
+- if local file changes, stop watching ,reupload to minio, resume watching
+- if remote file changes, stop watching,download db, resume watching
 
 ## Android Development
 
