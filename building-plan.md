@@ -18,5 +18,6 @@ info - http://stackoverflow.com/questions/48034748/ddg#48238804
 same logic as above
 
 potential additions
-[ ] encrypt db with gpg key before uploading
-[ ] decrypt once downloaded
+
+- encrypt db with gpg key before uploading
+- decrypt once downloaded
