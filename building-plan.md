@@ -3,6 +3,9 @@
 ## Setting up Minio
 
 configure minio to create events for s3:ObjectCreated:Put
+https://docs.min.io/docs/minio-bucket-notification-guide.html
+
+https://docs.min.io/docs/golang-client-api-reference#GetBucketNotification
 
 ## Linux development
 
