@@ -16,6 +16,7 @@ func localWatchHandler(watcher *fsnotify.Watcher){
 				log.Println("event:", event)
 				if event.Op&fsnotify.Write == fsnotify.Write {
 					log.Println("modified file:", event.Name)
+					fmt.Println("write to server")
 				}
 			case err, ok := <-watcher.Errors:
 				if !ok {
@@ -46,5 +47,8 @@ func main() {
 // Start file watch
 watcher := filewatch("/tmp/foo")
 go localWatchHandler(watcher)
+
+
 select{}
+
 }
