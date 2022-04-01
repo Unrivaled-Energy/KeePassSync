@@ -11,7 +11,7 @@ import (
 
 func localWatchHandler(watcher *fsnotify.Watcher, file string) {
 
-	minio := Minio{"localhost:9000", os.Getenv("MINIO_ACCESS_ID"), os.Getenv("MINIO_ACCESS_KEY"), false, "kp-sync", context.Background()}
+	minio := Minio{os.Getenv("MINIO_HOST_SOCKET"), os.Getenv("MINIO_ACCESS_ID"), os.Getenv("MINIO_ACCESS_KEY"), false, "kp-sync", context.Background()}
 	client := minio.initMinio()
 
 	for {

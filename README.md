@@ -14,6 +14,7 @@ In Development
 ```
 export MINIO_ACCESS_ID={service account id}
 export MINIO_ACCESS_KEY={service account key}
+export MINIO_HOST_SOCKET={Minio Host Socket}
 ```
 
 ## Android
