@@ -23,7 +23,7 @@ func localWatchHandler(watcher *fsnotify.Watcher, file string) {
 			log.Println("event:", event)
 			if event.Op&fsnotify.Write == fsnotify.Write {
 				log.Println("modified file:", event.Name)
-				fmt.Println("write to server")
+				fmt.Println("writing to server")
 				minio.uploadfile(client, "file", file, "application/octet-stream")
 			}
 		case err, ok := <-watcher.Errors:
