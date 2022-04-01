@@ -1,3 +1,0 @@
-export MINIO_ACCESS_ID=
-export MINIO_ACCESS_KEY=
-
